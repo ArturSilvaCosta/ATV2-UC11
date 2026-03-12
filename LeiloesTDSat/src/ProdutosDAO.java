@@ -22,8 +22,9 @@ public class ProdutosDAO {
             prep.setString(3, produto.getStatus());
 
             prep.executeUpdate();
+            JOptionPane.showMessageDialog(null, "Cadastro realizado com sucesso!");
         }catch(Exception e){
-
+            JOptionPane.showMessageDialog(null, "Erro ao cadastrar: "+e.getLocalizedMessage());
         }
  
     }
